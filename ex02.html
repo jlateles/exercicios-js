@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso js</title>
+    <style>
+        body {
+            font: 16px Arial;
+            background-color: #0a35ad;
+            color: white;
+        }
+        button {
+            font-size: 16px;
+            padding: 30px;
+            border-radius: 15px;
+            border: none;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados, parte 1.</h1>
+    <button onclick="inicio()">Clique para iniciar</button>
+</body>
+    <script>
+        function inicio() {
+            let nome = window.prompt("Qual é o seu nome?")
+            window.alert(`Olá, ${nome}! É um prazer te conhecer!`)
+        }
+    </script>
+</html>

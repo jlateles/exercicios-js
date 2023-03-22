@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso js</title>
+    <style>
+        body {
+            font-size: 18px;
+            background-color: rgb(35, 85, 20);
+            color:white;
+        }
+        button {
+            font-size: 16px;
+            padding: 30px;
+            border-radius: 15px;
+            border: none;
+            color: rgb(20, 73, 4);
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados, parte 2.</h1>
+    <button onclick="inicio()">Clique para iniciar</button>
+    <section id="resultado">
+        <p>O resultado aparecerá logo abaixo. <p>
+    </section>
+</body>    
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual é o seu nome?')
+            let res = window.document.getElementById('resultado')
+            // Também funciona com o comando abaixo
+            // let res = window.document.querySelector('section#resultado')
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1F596;`
+        }
+    </script>
+</html>
