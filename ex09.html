@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso js</title>
+</head>
+<style>
+    body {
+        font: 16px;
+        background-color:rgb(225, 225, 255);
+        align-items: center;
+        text-align: center;
+    }
+    h1, p{
+        font-family: 'Pacifico';
+        font-weight: bold;
+    }
+    button{
+        font-size: 18px;
+        padding: 60px;
+        border: none;
+        border-radius: 15px;
+        color:white;
+        background-color: blue;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>par ou símpar?</h1>
+    <button onclick="teste()">Clique para iniciar</button>
+    <section id="result">
+        <p>o resultado vai aparecer neste parágrafo.</p>
+    </section>
+</body>
+<script>
+    function teste() {
+    let num = Number(window.prompt('Digite um número: '))
+    let tipo
+    if (num % 2 == 0) {
+        tipo = '<strong>PAR</strong>'
+    } else {
+        tipo = '<strong>ÍMPAR</strong>'
+    }
+
+    let res = document.querySelector('section#result')
+    res.innerHTML = `<p>o número ${num} que foi digitado é ${tipo}!</p>`
+}
+</script>
+</html>
