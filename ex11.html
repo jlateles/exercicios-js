@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso js</title>
+    <style>
+        body{
+            font-size: 20px;
+            background-color: rgb(196, 162, 228);
+            align-items: center;
+            text-align: center;
+        }
+        h1{
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+            color: wheat;
+            text-shadow: 
+               -1px -1px 0px #5d1399, 
+               -1px 1px 0px #5d1399,                    
+                1px -1px 0px #5d1399,                  
+                1px 0px 0px #5d1399;
+        }
+        button{
+            font-size: 20px;
+            padding: 60px;
+            border: none;
+            border-radius: 30px;
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>interagindo com o sistema</h1>
+    <button onclick="info()">clique aqui!</button>
+    <section id="saida">
+        <p></p>
+    </section>
+</body>
+    <script>
+        function info() {
+            let agora = new Date
+            let saida = document.getElementById('saida')
+            saida.innerHTML = `<p>O que eu recebi do sistema foi <mark>${agora}</mark></p>`
+        }
+    </script>
+</html>
